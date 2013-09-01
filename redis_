@@ -5,6 +5,7 @@
 
 #%# family=auto
 #%# capabilities=autoconf suggest
+export PATH=$PATH:/opt/devcores/servers/redis/bin 
 
 ip=$(echo $0 | awk -F_ '{ print $2 }')
 port=$(echo $0 | awk -F_ '{ print $3 }')
